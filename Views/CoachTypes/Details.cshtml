@@ -1,0 +1,26 @@
+﻿@model HealthAW.Models.CoachType
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CoachType</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CoachTypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CoachTypeName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CoachTypeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

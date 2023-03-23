@@ -1,0 +1,26 @@
+﻿@model HealthAW.Models.ItemCategory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ItemCategory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemCategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemCategoryName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ItemCategoryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
